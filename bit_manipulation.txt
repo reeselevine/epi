@@ -1,0 +1,6 @@
+1.) Right propogate the rightmost set bit in x
+    x = x | (x - 1)
+2.) Compute x modulo a power of two
+   z = x ^ y, where y is a power of two.
+3.) Test if x is a power of two
+    return ~(x & (x - 1))
