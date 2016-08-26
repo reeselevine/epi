@@ -16,4 +16,10 @@ public class ChapterSixTest {
         assertArrayEquals(A, new int[]{1, 2, 1, 3, 3, 4, 6, 5});
     }
 
+    @Test
+    public void testBuyAndSell() {
+        int[] A = {310, 315, 275, 295, 260, 270, 290, 230, 255, 250};
+        assertEquals(a.buyAndSell(A), 30);
+    }
+
 }

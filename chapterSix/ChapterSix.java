@@ -1,6 +1,7 @@
 import java.util.Arrays;
 public class ChapterSix {
 
+    /** Solve 6.1, sort array into less than, equal, greater parts */
     public void dutchFlag(int[] A, int pivot) {
         int x = 0;
         int y = 0;
@@ -19,6 +20,20 @@ public class ChapterSix {
                 z--;
             }
         }
+    }
+
+    /** Solve 6.6, buy and sell a stock once */
+    public int buyAndSell(int[] A) {
+        int max = 0;
+        int start = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] - A[start] > max) {
+                max = A[i] - A[start];
+            } else if (A[i] - A[start] < 0) {
+                start = i;
+            }
+        }
+        return max;
     }
 
 }
