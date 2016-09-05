@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-/** Tests Chapter 8 questions.
+/** Tests Chapter 9 questions.
  *  @author Reese Levine
  */
 public class ChapterNineTest {
